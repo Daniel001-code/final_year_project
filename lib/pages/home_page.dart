@@ -262,11 +262,11 @@ class _HomePageState extends State<HomePage> {
                             padding: const EdgeInsets.only(right: 2),
                             child: MyTextField(
                                 controller: employeeContribution,
-                                hintText: 'enter percentage',
+                                hintText: 'percentage',
                                 obscureText: false,
                                 validator: (value) {
                                   if (value!.isEmpty) {
-                                    return "Amount is Required";
+                                    return "Percentage is Required";
                                   }
                                   if (!RegExp(r"^[0-9]+$").hasMatch(value)) {
                                     return "Pls enter a valid number from 0-100";
@@ -284,11 +284,11 @@ class _HomePageState extends State<HomePage> {
                             padding: const EdgeInsets.only(right: 2),
                             child: MyTextField(
                                 controller: employerContribution,
-                                hintText: 'enter percentage',
+                                hintText: 'percentage',
                                 obscureText: false,
                                 validator: (value) {
                                   if (value!.isEmpty) {
-                                    return "Amount is Required";
+                                    return "Percentage is Required";
                                   }
                                   if (!RegExp(r"^[0-9]+$").hasMatch(value)) {
                                     return "Pls enter a valid number from 0-100";
@@ -318,17 +318,6 @@ class _HomePageState extends State<HomePage> {
                                 MaterialPageRoute(
                                     builder: ((context) => PensionInfoPage())));
                           }
-                          print('first name: ' + firstName.text);
-                          print('last name: ' + lastName.text);
-                          print('bms: ' + basicMS.toString());
-                          print('htoa' + hTOA.toString());
-                          print('employee cont' + employeeCont.toString());
-                          print('employer cont' + employerCont.toString());
-                          print('employee Pen cont' +
-                              employeePenContr.toString());
-                          print('employer pen cont' +
-                              employeePenContr.toString());
-                          print('total pen cont' + totalPenContr.toString());
                         },
                         text: 'Submit'),
                   ],

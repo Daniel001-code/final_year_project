@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:final_year_project/components/my_button.dart';
 import 'package:final_year_project/components/my_textfield.dart';
 
@@ -147,9 +147,6 @@ class _LoginPageState extends State<LoginPage> {
                         SignUserIn();
                       }
                       formKey.currentState!.save();
-
-                      print(email);
-                      print(password);
                     },
                     text: 'Sign in'),
 

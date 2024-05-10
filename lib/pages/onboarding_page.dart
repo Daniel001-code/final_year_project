@@ -1,6 +1,5 @@
 import 'package:final_year_project/components/my_button.dart';
 import 'package:final_year_project/pages/auth_page.dart';
-
 import 'package:flutter/material.dart';
 
 class OnBoardingPage extends StatefulWidget {
@@ -17,7 +16,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             image:
                 DecorationImage(image: AssetImage('lib/assets/kadpoly.jpg'))),
         child: Column(
@@ -25,7 +24,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.11,
             ),
-            Text(
+            const Text(
               'Staff pension management system for Kaduna Polytechnic',
               textAlign: TextAlign.center,
               style: TextStyle(
