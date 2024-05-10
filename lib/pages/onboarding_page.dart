@@ -1,6 +1,6 @@
 import 'package:final_year_project/components/my_button.dart';
 import 'package:final_year_project/pages/auth_page.dart';
-import 'package:final_year_project/pages/login_or_register.dart';
+
 import 'package:flutter/material.dart';
 
 class OnBoardingPage extends StatefulWidget {
@@ -41,14 +41,16 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               padding: const EdgeInsets.symmetric(horizontal: 50),
               child: MyButton(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: ((context) => AuthPage())));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: ((context) => const AuthPage())));
                   },
                   text: 'Click to proceed'),
             ),
-            Spacer(),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
+            const Spacer(),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [

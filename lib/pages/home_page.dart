@@ -4,7 +4,6 @@ import 'package:final_year_project/components/my_textfield.dart';
 import 'package:final_year_project/pages/login_or_register.dart';
 import 'package:final_year_project/pages/pension_info_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 import 'package:flutter/material.dart';
 

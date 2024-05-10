@@ -1,5 +1,3 @@
-import 'package:final_year_project/pages/home_page.dart';
-import 'package:final_year_project/pages/login_or_register.dart';
 import 'package:final_year_project/pages/onboarding_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';

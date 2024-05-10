@@ -1,4 +1,3 @@
-import 'package:final_year_project/pages/home_page.dart';
 import 'package:final_year_project/pages/login_page.dart';
 import 'package:final_year_project/pages/page_option.dart';
 import 'package:final_year_project/pages/register_page.dart';

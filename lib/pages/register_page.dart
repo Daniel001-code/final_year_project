@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:final_year_project/components/my_button.dart';
 import 'package:final_year_project/components/my_textfield.dart';
-import 'package:final_year_project/pages/home_page.dart';
 
 class RegisterPage extends StatefulWidget {
   final void Function()? onTap;
@@ -101,6 +100,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   },
                   onSaved: (value) {
                     email = value!;
+                    return null;
                   },
                 ),
 
@@ -126,6 +126,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   },
                   onSaved: (value) {
                     password = value!;
+                    return null;
                   },
                 ),
 
@@ -150,6 +151,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   },
                   onSaved: (value) {
                     confirmPassword = value!;
+                    return null;
                   },
                 ),
 
